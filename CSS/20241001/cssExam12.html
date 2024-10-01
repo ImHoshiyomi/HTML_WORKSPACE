@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>이미지 테두리</title>
+    <style>
+      p {
+        background: yellow;
+        width: 200px;
+        height: 60px;
+        padding: 10px;
+        border: 20px solid lightgray;
+      }
+
+      #ro {
+        border-image: url("../img/border.png") 30 round;
+      }
+
+      #re {
+        border-image: url("../img/border.png") 30 repeat;
+      }
+
+      #st {
+        border-image: url("../img/border.png") 30 stretch;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>이미지 테두리</h3>
+    <hr />
+    원본 이미지 <br />
+    <img src="../img/border.png" alt="원본" />
+    <hr />
+    <p>20x20 크기의 회색 테두리를 가진 p 태그</p>
+    <p id="ro">round 스타일 이미지 테두리</p>
+    <p id="re">repeat 스타일 이미지 테두리</p>
+    <p id="st">stretch 스타일 이미지 테두리</p>
+  </body>
+</html>
