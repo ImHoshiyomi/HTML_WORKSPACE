@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>인라인, 인라인 블록</title>
+    <style>
+      div {
+        border: 3px solid yellowgreen;
+        color: blue;
+        background: aliceblue;
+      }
+
+      span {
+        border: 5px dotted red;
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>인라인, 인라인 블록</h3>
+    <hr />
+    나는
+    <div style="display: none">웹을 사랑</div>
+    합니다. <br /><br />
+    나는
+    <div style="display: inline">웹을 사랑</div>
+    합니다. <br /><br />
+    나는
+    <div style="display: inline-block; height: 60px">웹을 사랑</div>
+    합니다. <br /><br />
+    나는
+    <div>웹을 <span style="display: block">사랑</span> 합니다.</div>
+  </body>
+</html>
