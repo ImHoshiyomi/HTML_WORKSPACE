@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>셀렉터</title>
+    <style>
+      .main {
+        background-color: lightblue;
+      }
+
+      h3 {
+        color: green;
+      }
+
+      .center > strong {
+        background-color: yellow;
+      }
+
+      #indent {
+        text-indent: 4em;
+      }
+
+      #indent > p > em {
+        color: green;
+      }
+
+      #indent > p > strong {
+        color: red;
+      }
+    </style>
+  </head>
+  <body class="main"></body>
+  <h3>얼굴</h3>
+  <hr />
+  <div class="center"><strong>박인화</strong></div>
+  <div id="indent">
+    <p>
+      <em>길</em>을 걷고 산들 무엇하리 <strong>꽃</strong>이 내가 아니듯 내가
+      <strong>꽃</strong>이 될 수 없는지금...
+    </p>
+  </div>
+</html>
