@@ -11,22 +11,22 @@
     <form>
       <fieldset>
         <legend>도형 서식 입력</legend>
-        <label>선종류</label>
-        <select size="3">
+        <label for="a">선종류</label>
+        <select id="a" size="3">
           <option value="none">선없음</option>
           <option value="solid">실선</option>
           <option value="dotted">점선</option>
         </select>
         <br />
         <br />
-        <label>선두께</label>
-        <input type="number" style="width: 60px" />
-        <label>선색</label>
-        <input type="color" value="#00BFFF" />
+        <label for="b">선두께</label>
+        <input id="b" type="number" style="width: 60px" />
+        <label for="c">선색</label>
+        <input id="c" type="color" value="#00BFFF" />
         <br />
         <br />
-        <label>투명도(0~100) :</label>
-        <input type="range" min="0" max="100" list="alpha" />
+        <label for="d">투명도(0~100) :</label>
+        <input form="d" type="range" min="0" max="100" list="alpha" />
         <datalist id="alpha">
           <option value="0"></option>
           <option value="50"></option>
