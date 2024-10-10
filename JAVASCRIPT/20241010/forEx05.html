@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      document.writeln(
+        `<table width="80%" border="1" style="margin: auto; text-align: center">`
+      );
+
+      for (let i = 0; i < 6; i++) {
+        document.writeln("<tr>");
+
+        for (let j = 0; j < 7; j++) {
+          const pos = `(${i}, ${j})`;
+
+          document.writeln(`<td>${pos}</td>`);
+        }
+
+        document.writeln("</tr>");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

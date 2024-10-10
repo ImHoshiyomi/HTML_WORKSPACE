@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const v1 = "가나다라";
+      const v2 = "123456";
+
+      const isNumber1 = !isNaN(v1);
+      const isNumber2 = !isNaN(v2);
+
+      document.writeln(
+        `<h1>${v1}은(는) 숫자${isNumber1 ? "입니" : "가 아닙니"}다.</h1>`
+      );
+      document.writeln(
+        `<h1>${v2}은(는) 숫자${isNumber2 ? "입니" : "가 아닙니"}다.</h1>`
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
