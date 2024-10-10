@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // 누적 합계 변수 선언
+      var accumulator = 0;
+
+      // 1부터 10까지 증가하는 동안에 i의 값을 누적 합계 변수에 저장
+      for (let i = 0; i <= 10; i++) {
+        // i는 0부터 10까지 1씩 증가
+
+        // 반복하는 동안 증가하는 값을 누적시킨다.
+        accumulator += i;
+        // 누적 합계 변수에 값을 더한다.
+      }
+
+      document.writeln(`<h1>1부터 10까지의 합은 ${accumulator}입니다.</h1>`);
+    </script>
+  </head>
+  <body></body>
+</html>

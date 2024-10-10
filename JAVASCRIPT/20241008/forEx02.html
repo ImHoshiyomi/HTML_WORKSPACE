@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const dan = prompt("출력할 단 입력") || 1;
+
+      document.writeln("<h3>for 문으로 출력</h3>");
+      document.writeln("<p>");
+
+      for (let i = 1; i <= 9; i++) {
+        const result = dan * i;
+
+        document.writeln(`${dan} × ${i} = ${result}<br />`);
+      }
+
+      document.writeln("</p>");
+
+      //////////////////////////////////////////////////
+
+      document.writeln("<h3>while 문으로 출력</h3>");
+      document.writeln("<p>");
+
+      let j = 1;
+
+      while (j <= 9) {
+        const result = dan * j;
+
+        document.writeln(`${dan} × ${j++} = ${result}<br />`);
+      }
+
+      document.writeln("</p>");
+
+      //////////////////////////////////////////////////
+
+      document.writeln("<h3>do while 문으로 출력</h3>");
+      document.writeln("<p>");
+
+      let k = 1;
+
+      do {
+        const result = dan * k;
+
+        document.writeln(`${dan} × ${k++} = ${result}<br />`);
+      } while (k <= 9);
+
+      document.writeln("</p>");
+    </script>
+  </head>
+  <body></body>
+</html>

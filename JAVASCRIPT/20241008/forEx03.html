@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let [even, odd] = [0, 0];
+
+      for (let i = 1; i <= 100; i++) {
+        if (i % 2 == 0) {
+          even += i;
+        } else {
+          odd += i;
+        }
+      }
+
+      document.writeln(`<h1>짝수의 합계: ${even}</h1>`);
+      document.writeln(`<h1>홀수의 합계: ${odd}</h1>`);
+    </script>
+  </head>
+  <body></body>
+</html>
