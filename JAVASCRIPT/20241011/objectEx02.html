@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const a = {
+        name: "지용",
+        gender: "남성",
+        sayName() {
+          document.writeln(`<h1>${this.name}</h1>`);
+        },
+        sayGender() {
+          document.writeln(`<h1>${this.gender}</h1>`);
+        },
+        saySomething(msg) {
+          document.writeln(`<h1>${msg}</h1>`);
+        },
+        getName() {
+          return this.name;
+        },
+        getGender() {
+          return this.gender;
+        },
+        sayInfo() {
+          document.writeln(`<h1>${this.name}님은 ${this.gender}</h1>`);
+        },
+      };
+
+      a.sayName();
+      a.sayGender();
+      a.saySomething("핼로 자바스크립트");
+      a.sayInfo();
+    </script>
+  </head>
+  <body></body>
+</html>

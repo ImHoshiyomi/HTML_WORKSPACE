@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const calc = {
+        x: 0,
+        y: 0,
+        setX(x) {
+          this.x = x;
+        },
+        setY(y) {
+          this.y = y;
+        },
+        getSum() {
+          return this.x + this.y;
+        },
+        getDifference() {
+          return this.x - this.y;
+        },
+        getProduct() {
+          return this.x * this.y;
+        },
+        getQuotient() {
+          return this.x / this.y;
+        },
+        printResult() {
+          document.writeln(`<p>합: ${this.getSum()}</p>`);
+          document.writeln(`<p>차: ${this.getDifference()}</p>`);
+          document.writeln(`<p>곱: ${this.getProduct()}</p>`);
+          document.writeln(`<p>몫: ${this.getQuotient()}</p>`);
+        },
+      };
+
+      calc.setX(10);
+      calc.setY(3);
+
+      calc.printResult();
+    </script>
+  </head>
+  <body>
+    <h1>계산기</h1>
+  </body>
+</html>
