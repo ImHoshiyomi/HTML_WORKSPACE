@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const days = ["일", "월", "화", "수", "목", "금", " 토"];
+
+      function getDateTimeString() {
+        const myDate = new Date();
+        const year = myDate.getFullYear();
+        const month = myDate.getMonth();
+        const date = myDate.getDate();
+        const day = myDate.getDay();
+        const hours = myDate.getHours();
+        const minutes = myDate.getMinutes();
+        const seconds = myDate.getSeconds();
+        return `${year}년 ${month}월 ${date}일 ${day}요일 ${hours}시 ${minutes}분 ${seconds}초`;
+      }
+      document.writeln(`<h2 id="date_time">ddd</h2>`);
+
+      setInterval(() => {
+        document.getElementById("date_time").innerText = getDateTimeString();
+      });
+    </script>
+  </head>
+  <body></body>
+</html>

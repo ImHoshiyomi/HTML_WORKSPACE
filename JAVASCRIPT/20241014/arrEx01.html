@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const myArray = new Array("홍길동", "활빈당", "보스");
+
+      // const myArray = ["홍길동", "활빈당", "보스"];
+
+      document.writeln(`<h1>${myArray[0]}</h1>`);
+      document.writeln(`<h1>${myArray[1]}</h1>`);
+      document.writeln(`<h1>${myArray[2]}</h1>`);
+
+      myArray[0] = "강감찬";
+      myArray[1] = "귀주대첩";
+      myArray[2] = "고려의 장군";
+
+      document.writeln(`<h1>${myArray[0]}</h1>`);
+      document.writeln(`<h1>${myArray[1]}</h1>`);
+      document.writeln(`<h1>${myArray[2]}</h1>`);
+
+      for (let i = 0; i < myArray.length; i++) {
+        document.writeln(`<h1>${myArray[i]}</h1>`);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

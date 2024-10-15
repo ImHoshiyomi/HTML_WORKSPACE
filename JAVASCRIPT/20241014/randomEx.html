@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // function random(start, end) {
+      //   return parseInt(Math.random() + 1);
+      // }
+
+      // document.writeln(`1 ~ 10의 난수: ${random(0, 9)}`);
+
+      function generateRandomCode(length) {
+        let code = "";
+
+        for (let i = 0; i < length; i++) {
+          code += parseInt(Math.random() * 10);
+        }
+
+        return code;
+      }
+
+      document.writeln(
+        `<h1>인증번호: <span id="ss">${generateRandomCode(5)}</span></h1>`
+      );
+
+      setInterval(() => {
+        document.getElementById("ss").innerText = generateRandomCode(5);
+      }, 10);
+    </script>
+  </head>
+  <body></body>
+</html>
